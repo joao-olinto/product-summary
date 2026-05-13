@@ -3,7 +3,6 @@ package domain.exception;
 public class DomainException extends RuntimeException {
 	
 	
-	
 	/**
 	 * 
 	 */
@@ -14,7 +13,6 @@ public class DomainException extends RuntimeException {
 	 * Criamos o construtor e passamos como parametro uma variavel String
 	 * Fizemos a chamada ao construtor da superClasse RuntimeException
 	 */
-	
 	public DomainException(String message) {
 		super(message);
 	}
