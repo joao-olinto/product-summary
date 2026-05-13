@@ -61,4 +61,35 @@ public class Product {
 		this.name = name;
 	}
 
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+
+		if (price < 0.0) {
+			throw new DomainException("Domain error: the price cannot be lower than zero.");
+
+		}
+
+		this.price = price;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	public void setQuantity(int quantity) {
+		
+		if(quantity < 0) {
+			throw new DomainException("Domain error: the quantity cannot be lower than zero.");
+		}
+	}
+	
+	
+	//A method that allows us to calculate the subtotal.
+	public double subTotal() {
+		return price * quantity;
+	}
+
 }
