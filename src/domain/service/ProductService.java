@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 
 import application.ProductFileReader;
+import application.ProductFileWriter;
 import domain.entities.Product;
 import domain.exception.DomainException;
 
@@ -17,6 +18,13 @@ public class ProductService {
 	public void generateProductList(File file) {
 		ProductFileReader reader = new ProductFileReader();
 		products = reader.readFile(file);
+	}
+
+	// This method takes as parameters a string and a file that will be saved as a
+	// summary of the products.
+	public void saveSummary(File file, String saveText) {
+		ProductFileWriter writer = new ProductFileWriter();
+		writer.writeFileSummary(file, saveText);
 	}
 
 	// returns the total value of the products in the list
