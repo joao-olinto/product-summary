@@ -84,6 +84,8 @@ public class Product {
 		if(quantity < 0) {
 			throw new DomainException("Domain error: the quantity cannot be lower than zero.");
 		}
+		
+		this.quantity = quantity;
 	}
 	
 	

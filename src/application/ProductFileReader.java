@@ -17,7 +17,7 @@ public class ProductFileReader {
 	 */
 
 	// Returns a list of products.
-	public List<Product> readerFiles(File arquivoText) {
+	public List<Product> readFile(File arquivoText) {
 
 		List<Product> products = new ArrayList<>();
 
