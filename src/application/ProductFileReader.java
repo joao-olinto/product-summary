@@ -17,12 +17,12 @@ public class ProductFileReader {
 	 */
 
 	// Returns a list of products.
-	public List<Product> readFile(File arquivoText) {
+	public List<Product> readFile(File productsText) {
 
 		List<Product> products = new ArrayList<>();
 
 		// "try-with-resources" ensures that open resources are automatically closed.
-		try (BufferedReader br = new BufferedReader(new FileReader(arquivoText))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(productsText))) {
 
 			String text;
 
