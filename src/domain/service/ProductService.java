@@ -29,18 +29,15 @@ public class ProductService {
 
 	// returns the total value of the products in the list
 	public double totalValueProducts() {
-		double totalValue = 0.0;
-		// A foreach loop iterates through the list, adding the value of each product to
-		// the variable `totalValue`.
-		for (Product p : products) {
-			totalValue += p.subTotal();
-		}
+		//We apply lambda to solve this method.
+		
+		double totalValue = products.stream().mapToDouble(Product::subTotal).sum();
 
 		return totalValue;
 	}
 
 	// method that returns the average of the products in the list.
-	public double productsAverage() throws DomainException, ArithmeticException {
+	public double productsAverage() throws DomainException {
 
 		if (products == null || products.isEmpty()) {
 			throw new DomainException("Domain Error: the product list is empty."
@@ -52,9 +49,17 @@ public class ProductService {
 	}
 
 	// Returns the quantity of products in the list.
-	public int quantityOfProducts() {
+	public int totalItemsInStock() {
+		
+		// We apply lambda to solve this method.
+		int totalQuantityProducts = products.stream()
+				// Pega cada produto e transforma em int.
+				//Product::getQuantity faz referencia ao metodo
+				.mapToInt(Product::getQuantity)
+				// Soma tudo automaticamente
+				.sum();
 
-		return products.size();
+		return totalQuantityProducts;
 	}
 
 	// returns a shallow copy of the product list
