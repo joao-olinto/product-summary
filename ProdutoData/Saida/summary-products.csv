@@ -1,0 +1,97 @@
+======== LISTA DE PRODUTOS ========
+
+
+Product: Arroz Integral, price: $12.50, quantity: 30
+subtotal: 375.00
+
+Product: Feijao Preto, price: $9.80, quantity: 25
+subtotal: 245.00
+
+Product: Macarrao Espaguete, price: $7.40, quantity: 40
+subtotal: 296.00
+
+Product: Leite Integral, price: $5.99, quantity: 50
+subtotal: 299.50
+
+Product: Cafe Torrado, price: $18.75, quantity: 20
+subtotal: 375.00
+
+Product: Acucar Refinado, price: $4.30, quantity: 35
+subtotal: 150.50
+
+Product: Farinha de Trigo, price: $6.90, quantity: 18
+subtotal: 124.20
+
+Product: Oleo de Soja, price: $8.45, quantity: 22
+subtotal: 185.90
+
+Product: Manteiga, price: $11.20, quantity: 15
+subtotal: 168.00
+
+Product: Queijo Mussarela, price: $39.90, quantity: 10
+subtotal: 399.00
+
+Product: Presunto Cozido, price: $27.50, quantity: 12
+subtotal: 330.00
+
+Product: Pao Frances, price: $0.90, quantity: 100
+subtotal: 90.00
+
+Product: Refrigerante Cola, price: $8.99, quantity: 28
+subtotal: 251.72
+
+Product: Agua Mineral, price: $2.50, quantity: 60
+subtotal: 150.00
+
+Product: Sabonete Neutro, price: $3.75, quantity: 45
+subtotal: 168.75
+
+Product: Shampoo Hidratante, price: $16.80, quantity: 14
+subtotal: 235.20
+
+Product: Condicionador, price: $17.40, quantity: 13
+subtotal: 226.20
+
+Product: Pasta de Dente, price: $6.70, quantity: 33
+subtotal: 221.10
+
+Product: Detergente Liquido, price: $2.80, quantity: 48
+subtotal: 134.40
+
+Product: Esponja Multiuso, price: $1.99, quantity: 55
+subtotal: 109.45
+
+Product: Caderno Universitario, price: $22.90, quantity: 16
+subtotal: 366.40
+
+Product: Caneta Azul, price: $2.20, quantity: 80
+subtotal: 176.00
+
+Product: Lapiseira 0.7, price: $9.90, quantity: 19
+subtotal: 188.10
+
+Product: Mouse Gamer, price: $89.90, quantity: 7
+subtotal: 629.30
+
+Product: Teclado Mecanico, price: $199.90, quantity: 5
+subtotal: 999.50
+
+Product: Monitor 24 Polegadas, price: $899.99, quantity: 3
+subtotal: 2699.97
+
+Product: Notebook Ryzen 7, price: $4599.90, quantity: 2
+subtotal: 9199.80
+
+Product: Headset Bluetooth, price: $249.50, quantity: 6
+subtotal: 1497.00
+
+Product: Carregador USB-C, price: $39.90, quantity: 17
+subtotal: 678.30
+
+Product: SSD 1TB, price: $549.00, quantity: 4
+subtotal: 2196.00
+
+
+Total value of the products: $23165.29
+Total number of products in stock: 832
+Average price of all products in stock: $27.84
