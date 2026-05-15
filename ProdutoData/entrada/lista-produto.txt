@@ -1,0 +1,30 @@
+Arroz Integral,12.50,30
+Feijao Preto,9.80,25
+Macarrao Espaguete,7.40,40
+Leite Integral,5.99,50
+Cafe Torrado,18.75,20
+Acucar Refinado,4.30,35
+Farinha de Trigo,6.90,18
+Oleo de Soja,8.45,22
+Manteiga,11.20,15
+Queijo Mussarela,39.90,10
+Presunto Cozido,27.50,12
+Pao Frances,0.90,100
+Refrigerante Cola,8.99,28
+Agua Mineral,2.50,60
+Sabonete Neutro,3.75,45
+Shampoo Hidratante,16.80,14
+Condicionador,17.40,13
+Pasta de Dente,6.70,33
+Detergente Liquido,2.80,48
+Esponja Multiuso,1.99,55
+Caderno Universitario,22.90,16
+Caneta Azul,2.20,80
+Lapiseira 0.7,9.90,19
+Mouse Gamer,89.90,7
+Teclado Mecanico,199.90,5
+Monitor 24 Polegadas,899.99,3
+Notebook Ryzen 7,4599.90,2
+Headset Bluetooth,249.50,6
+Carregador USB-C,39.90,17
+SSD 1TB,549.00,4

@@ -11,9 +11,10 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		
 		ProductService service = new ProductService();
-		String fileInProducts = "C:\\Users\\O Pai\\OneDrive\\Desktop\\facul ADS\\cursos adicionais\\ws-eclipse\\ProductSumary\\ProdutoData\\lista-produto.csv";
+		String fileInProducts = "C:\\Users\\O Pai\\OneDrive\\Desktop\\facul ADS\\cursos adicionais\\ws-eclipse\\ProductSumary\\ProdutoData\\entrada\\lista-produto.txt";
 		File dataInProducts = new File(fileInProducts);
 		service.generateProductList(dataInProducts);
+		
 		
 		
 		
