@@ -12,7 +12,7 @@ public class Product {
 	public Product(String name, double price, int quantity) {
 
 		// The attribute name format accepts letters, spaces, and numbers.
-		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s-]+$")) {
+		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s\\-.]+$")) {
 			throw new DomainException("Domain error: The name is null or out of format.");
 
 		}
@@ -33,7 +33,7 @@ public class Product {
 
 	public Product(String name, double price) {
 
-		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s-]+$")) {
+		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s\\-.]+$")) {
 			throw new DomainException("Domain error: The name is null or out of format.");
 
 		}
@@ -53,7 +53,7 @@ public class Product {
 
 	public void setName(String name) {
 
-		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s-]+$")) {
+		if (name == null || !name.trim().matches("^[\\p{L}\\d\\s\\-.]+$")) {
 			throw new DomainException("Domain error: The name is null or out of format.");
 
 		}

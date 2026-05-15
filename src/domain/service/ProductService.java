@@ -3,9 +3,9 @@ package domain.service;
 import java.io.File;
 import java.util.List;
 
+import domain.entities.Product;
 import application.ProductFileReader;
 import application.ProductFileWriter;
-import domain.entities.Product;
 import domain.exception.DomainException;
 
 public class ProductService {
@@ -26,6 +26,33 @@ public class ProductService {
 		ProductFileWriter writer = new ProductFileWriter();
 		writer.writeFileSummary(file, saveText);
 	}
+	
+	//A method that assembles the summary of the product list using StringBuilder.
+	public String generateSummary() {
+		StringBuilder sb = new StringBuilder();
+		
+		
+		for(Product p: products) {
+			sb.append("\nProduct: "+ p.getName())
+			.append(String.format(", price: $%.2f", p.getPrice()));
+			sb.append(", quantity: " + p.getQuantity());
+			sb.append(String.format("\nsubtotal: %.2f", p.subTotal()));
+			sb.append(System.lineSeparator());
+			
+		}
+	
+		//skip two lines
+		for(int i = 0; i < 2; i++) {
+			sb.append(System.lineSeparator());
+		}
+		
+		
+		sb.append(String.format("Total value of the products: $%.2f",totalValueProducts()));
+		sb.append("\nTotal number of products in stock: "+ totalItemsInStock());
+		sb.append(String.format("\nAverage price of all products in stock: $%.2f",productsAverage()));
+		
+		return sb.toString();
+	}
 
 	// returns the total value of the products in the list
 	public double totalValueProducts() {
@@ -44,8 +71,9 @@ public class ProductService {
 
 			);
 		}
-		double average = totalValueProducts() / products.size();
-		return average;
+		
+		
+		return totalValueProducts() / totalItemsInStock();
 	}
 
 	// Returns the quantity of products in the list.
